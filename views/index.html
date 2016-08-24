@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block content %}
+Hotels:
+<select class = 'selectpicker'>
+	{% for hotel in hotels%}
+	<option>
+		{{hotel.name}}
+	</option>
+	{% endfor %}
+</select>
+
+Restaurants:
+<select class = 'selectpicker'>
+	{% for restaurant in restaurants %}
+	<option>
+		{{restaurant.name}}
+	</option>
+	{% endfor %}
+</select>
+
+Activities:
+<select class = 'selectpicker'>
+	{% for activity in activities %}
+	<option>
+		{{activity.name}}
+	</option>
+	{% endfor %}
+</select>
+
+
+{% endblock %}
