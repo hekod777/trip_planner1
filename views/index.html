@@ -1,5 +1,6 @@
 {% extends 'layout.html' %}
 {% block content %}
+<div id="homepage">
 Hotels:
 <select class = 'selectpicker'>
 	{% for hotel in hotels%}
@@ -26,6 +27,6 @@ Activities:
 	</option>
 	{% endfor %}
 </select>
-
+</div>
 
 {% endblock %}
